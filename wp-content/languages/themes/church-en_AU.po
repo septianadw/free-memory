@@ -1,0 +1,67 @@
+# Translation of Church in English (Australia)
+# This file is distributed under the same license as the Church package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-09-08 23:50:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Church\n"
+
+#. Theme Name of the plugin/theme
+msgid "Church"
+msgstr "Church"
+
+#. Description of the plugin/theme
+msgid "Church WordPress theme is a Responsive HTML5 Omega child theme for WordPress. Church theme inherits all Omega parent theme capabilities, reveal big fat footer widget areas, built-in WordPress Customizer, Custom Logo upload, custom header, custom background, custom colors, custom footer, custom menu, custom CSS live, custom widgets, woocommerce compatiblity for ecommerce site, inner page custom header via featured image. Church theme can be used for any type of website : corporate, blog, personal, non-profit, online shop, and of course: churches."
+msgstr "Church WordPress theme is a Responsive HTML5 Omega child theme for WordPress. Church theme inherits all Omega parent theme capabilities, reveal big fat footer widget areas, built-in WordPress Customiser, Custom Logo upload, custom header, custom background, custom colours, custom footer, custom menu, custom CSS live, custom widgets, WooCommerce compatibility for eCommerce site, inner page custom header via featured image. Church theme can be used for any type of website : corporate, blog, personal, non-profit, online shop, and of course: churches."
+
+#. Template Name of the plugin/theme
+msgid "Left Sidebar"
+msgstr "Left Sidebar"
+
+#. Template Name of the plugin/theme
+msgid "Full-width, No Sidebar"
+msgstr "Full-width, No Sidebar"
+
+#: functions.php:187
+msgid "Header Right"
+msgstr "Header Right"
+
+#: functions.php:217
+msgid "Header Image Link"
+msgstr "Header Image Link"
+
+#: functions.php:225
+msgid "Show image on front page only:"
+msgstr "Show image on front page only:"
+
+#: functions.php:195
+msgid "Home Banner"
+msgstr "Home Banner"
+
+#: functions.php:156
+msgid "Link Color"
+msgstr "Link Colour"
+
+#: functions.php:150
+msgid "Primary Color"
+msgstr "Primary Colour"
+
+#: functions.php:153
+msgid "Secondary Background"
+msgstr "Secondary Background"
+
+#. Author URI of the plugin/theme
+msgid "http://www.themehall.com"
+msgstr "http://www.themehall.com"
+
+#. Author of the plugin/theme
+msgid "themehall.com"
+msgstr "themehall.com"
+
+#. Theme URI of the plugin/theme
+msgid "http://themehall.com/free-responsive-church-theme-wordpress"
+msgstr "http://themehall.com/free-responsive-church-theme-wordpress"
