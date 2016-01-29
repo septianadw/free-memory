@@ -47,18 +47,6 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<div class="page-widget">
-		<?php
-			/*WIDGET RECENT POST*/
-					the_widget( 'WP_Widget_Recent_Posts' );
-
-					echo "<br>";
-			/*WIDGET most used categories*/
-					the_widget( 'WP_Widget_Categories' );
-		?>
-
-	</div> <!--END OF PAGE WIDGET-->
-
 
 </article><!-- #post-## -->
 
