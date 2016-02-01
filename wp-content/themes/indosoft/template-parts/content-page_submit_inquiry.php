@@ -52,6 +52,18 @@
 		<input id="address" name="address" type="text" /></div>
 		<div class="form-group"><label for="city">City</label>
 		<input id="city" name="city" type="text" /></div>
+		<div class="ginput_container ginput_container_checkbox"><ul class="gfield_checkbox" id="input_1_12">
+			<ul><li class="gchoice_1_12_1">
+				<input name="input_12.1" type="checkbox" value="Ich stimme der Datenschutzerklarung zu." id="choice_1_12_1" tabindex="8">
+				<label for="choice_1_12_1" id="label_1_12_1">Ich stimme der Datenschutzerklarung zu.</label>
+			</li>
+			<li class="gchoice_1_12_2">
+				<input name="input_12.2" type="checkbox" value="Newsletter Abonnieren" id="choice_1_12_2" tabindex="9">
+				<label for="choice_1_12_2" id="label_1_12_2">Newsletter Abonnieren</label>
+			</li></ul>
+		</div>
+		<div><input type="reset" name="cancel"></div><br>
+		<div><input type="submit" name="save"></div>
 		</form>
 	</div><!-- .entry-content -->
 
