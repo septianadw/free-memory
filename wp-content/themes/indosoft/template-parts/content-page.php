@@ -11,15 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		  <div class="login-inf">
-			   <?php
-			   global $current_user;
-			        get_currentuserinfo();
-			   if ( $user_ID ) { ?>
-			    <span>Welcome back <?php echo $current_user->user_login ?> | if you are not <?php echo $current_user->user_login ?>, <a href="<?php echo wp_logout_url( $redirect ); ?> ">click here</a></span>
-			   <?php } else {   ?>
-			   <?php } ?>
-		  </div>
 	  	<div>
 			<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</div>

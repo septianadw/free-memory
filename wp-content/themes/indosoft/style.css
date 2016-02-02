@@ -93,6 +93,26 @@ ul {
     /* padding-bottom: 0px; */
 }
 
+/* Pagination
+*****************/
+.paging{background:white;margin-top:20px;margin-bottom:70px}
+.nav-next{float:right}
+.nav-next a{text-decoration:none;color:#b45f04}
+.nav-next a:hover{text-decoration:none;color:#eb7b0e}
+.nav-previous{float:left}
+.nav-previous a{text-decoration:none;color:#b45f04}
+.nav-previous a:hover{text-decoration:none;color:#eb7b0e}
+/* End pagination
+*****************/
+ul.display-posts-listing a.title {
+    text-align: justify;
+    max-width: 200%;
+    /* border: 1px solid red; */
+    float: left;
+    position: absolute;
+    padding-left: 51px;
+}
+
 article,
 aside,
 details,
@@ -173,6 +193,7 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 	font-weight: 100;
+	color:#008000;
 }
 h3{
 	color:#008000;
@@ -278,9 +299,9 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box;
-	padding: 0;
-	width: 10px;
-	margin-left: 135px;
+    padding: 0;
+    width: 10px;
+    margin-left: 241px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -326,6 +347,89 @@ td,
 th {
 	padding: 0;
 }
+
+/*-------------------------------------------------*/
+/*breadcumb*/
+	    .row {
+		    max-width: 60.7rem;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.row::before, .row::after {
+		    content: ' ';
+		    display: table;
+		}
+		#breadcrumbs {
+		    list-style: none;
+		    padding: 7px 0;
+		    margin: 0;
+		    overflow: hidden;
+		    position: relative;
+		}
+		#breadcrumbs li {
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		    font-family: "Univers LT W02 45 Light" , Helvetica, Arial, sans-serif;
+		}
+		#breadcrumbs li.item-home {
+		    background-image: url(images/logo_breadcumb.png);
+		    background-position: center;
+		    background-size: 27px;
+		    background-repeat: no-repeat;
+		    margin-left: 15px;
+		    margin-top: 8px;
+		}
+		#breadcrumbs li:not(.item-home):not(.separator) {
+		    margin-top: 5px;
+		    font-size: 14px;
+		}
+		#breadcrumbs li:not(.item-home):not(.separator) {
+		    /*background: url(data:images/download.png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAXCAYAAAA/ZK6/AAAAGXRFW…5J5eXclLJyKijK02BW9oEkx0CWY7BW5TjWsPuBvJV/5CPAAGqqL0CMEdXsAAAAAElFTkSuQmCC) no-repeat center left;*/
+		    background: url(images/download.png) no-repeat center left;
+		    padding-left: 30px;
+		    /*width: -1px;*/
+		}
+		div#breadcumb_nav:after {
+		    content: '';
+		    display: block;
+		    border-bottom: 5px #F0F0F0 double;
+		    width: 250%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.row::after {
+		    clear: both;
+		}
+
+
+		.breadcrums_homepage {
+		    visibility: hidden;
+		    /*margin-left: -20px;*/
+		}
+
+		li.item-home a.bread-link.bread-home:after {
+		    font-family: 'FontAwesome';
+		    content: " ";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
+		li.separator:after {
+		    font-family: 'FontAwesome';
+		    content: " ";
+		    /* margin-left: 10px; */
+		    color: #999999;
+		    font-size: 20px;
+		}
+
+		home:after {
+		    font-family: 'FontAwesome';
+		    content: "\f015";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
 
 /*--------------------------------------------------------------
 # Typography
@@ -453,7 +557,7 @@ body {
 	width: 60px;
 	height: 80px;
 	color:#47B238;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .title{
@@ -461,7 +565,7 @@ body {
 	width: 400px;
 	height: 80px;
 	color:#007800;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-left: 15px;
 }
 
@@ -557,6 +661,7 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+	margin-top: 10px;
 }
 
 table {
@@ -709,7 +814,10 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #257D25;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
 }
 
 a:visited {
@@ -759,8 +867,8 @@ div.txt p {
     color: #FFF;
     background-color: #006C00;
     border-bottom-style: outset;
-    border-bottom-color: #CCCCCC;
-    border-bottom-width: 4px;
+    border-bottom-color: #FFFFFF;
+    border-bottom-width: 6px;
 }
 
 .main-navigation a {
@@ -1419,8 +1527,8 @@ nav#site-footer-navigation {
 
 .form-group input, .form-group select {
 	display: block;
-    width: 73%;
-    height: 34px;
+    /* width: 73%; */
+    /* height: 34px; */
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -1516,6 +1624,14 @@ nav#site-footer-navigation {
 		/*margin: 0 0 1.5em;*/
 		margin: 0px -40px 1.5em;
 	}
+	.page-map {
+	    margin-top: 6px;
+	    display: block;
+	    border-bottom-color: #CCCCCC;
+	    border-bottom-style: double;
+	    width: 200%;
+	    height: 70px;
+	}
 }
 
 @media only screen and (min-width: 641px) {
@@ -1544,7 +1660,8 @@ nav#site-footer-navigation {
 		overflow: hidden;
 		width: 25%;
 		margin: 2.5em 0 0;
-	    margin-top: -40%;
+	    margin: -42% auto;
+
 	}
 	.site-content .widget-area h2 {
 		color:#008000;
@@ -1556,6 +1673,14 @@ nav#site-footer-navigation {
 	.hentry {
 		/*margin: 0 0 1.5em;*/
 		margin: 0px -40px 1.5em;
+	}
+	.page-map {
+	    margin-top: 6px;
+	    display: block;
+	    border-bottom-color: #CCCCCC;
+	    border-bottom-style: double;
+	    width: 250%;
+	    height: 70px;
 	}
 
 }
@@ -1600,6 +1725,13 @@ nav#site-footer-navigation {
 	    /* border-left: 1px solid #11A911; */
 	    color: #007900;
 	    /*padding: 0 0 0 4px;*/
+	}
+	.page-map {
+	    margin-top: 6px;
+	    display: block;
+	    border-bottom-color: #CCCCCC;
+	    border-bottom-style: double;
+	    width: 200%;
 	}
 
 }
@@ -1714,6 +1846,89 @@ nav#site-footer-navigation {
 	    margin: 1.67em 11px;
 	    font-weight: 100;
 	}
+
+	/*breadcumb*/
+	    .row {
+		    max-width: 60.7rem;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.row::before, .row::after {
+		    content: ' ';
+		    display: table;
+		}
+		#breadcrumbs {
+		    list-style: none;
+		    padding: 7px 0;
+		    margin: 0;
+		    overflow: hidden;
+		    position: relative;
+		    margin-top: 8px;
+		}
+		#breadcrumbs li {
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		    font-family: "Univers LT W02 45 Light" , Helvetica, Arial, sans-serif;
+		}
+		#breadcrumbs li.item-home {
+		    background-image: url(images/logo_breadcumb.png);
+		    background-position: center;
+		    background-size: 27px;
+		    background-repeat: no-repeat;
+		    margin-left: 15px;
+		    margin-top: 8px;
+		}
+		#breadcrumbs li:not(.item-home):not(.separator) {
+		    margin-top: 5px;
+		    font-size: 14px;
+		}
+		#breadcrumbs li:not(.item-home):not(.separator) {
+		    /*background: url(data:images/download.png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAXCAYAAAA/ZK6/AAAAGXRFW…5J5eXclLJyKijK02BW9oEkx0CWY7BW5TjWsPuBvJV/5CPAAGqqL0CMEdXsAAAAAElFTkSuQmCC) no-repeat center left;*/
+		    background: url(images/download.png) no-repeat center left;
+		    padding-left: 30px;
+		    width: 2px;
+		}
+		div#breadcumb_nav:after {
+		    content: '';
+		    display: block;
+		    border-bottom: 5px #F0F0F0 double;
+		    width: 97%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.row::after {
+		    clear: both;
+		}
+
+
+		.breadcrums_homepage {
+		    visibility: hidden;
+		    /*margin-left: -20px;*/
+		}
+
+		li.item-home a.bread-link.bread-home:after {
+		    font-family: 'FontAwesome';
+		    content: " ";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
+		li.separator:after {
+		    font-family: 'FontAwesome';
+		    content: " ";
+		    /* margin-left: 10px; */
+		    color: #999999;
+		    font-size: 20px;
+		}
+
+		home:after {
+		    font-family: 'FontAwesome';
+		    content: "\f015";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
 
 }
 
@@ -1857,6 +2072,7 @@ nav#site-footer-navigation {
 		width: 100%;
 		float: left;
 		text-align: left;
+		font-size: 1rem;
 	}
 
 	main#main.site-main {
@@ -1893,7 +2109,7 @@ nav#site-footer-navigation {
 		margin: 5px 12px 5px 0;
 		padding: 10px;
 		background: #007f00;
-		border: 3px #007f00 solid;
+		border: 2px #729872 solid;
 		color: #FFFFFF;
 		box-shadow: none;
 		display: inline-block;
@@ -2277,9 +2493,20 @@ nav#site-footer-navigation {
 	}
 
 	.page-map {
-	    /*margin-top: 20px;*/
-	    display: none;
+	    margin-top: 6px;
+	    display: block;
+	    border-bottom-color: #CCCCCC;
+	    border-bottom-style: double;
+	    width: 200%;
+	    height: 70px;
 	}
+	/*div.page-map p{
+		margin:0 auto;
+		max-width: 1000px;
+		position: relative;
+		top:-42px;
+		margin-left: 85px;
+	}*/
 	.entry-content #outerDiv {
 	    font-family: sans-serif;
 	    font-size: 12px;
@@ -2335,7 +2562,7 @@ nav#site-footer-navigation {
 	    box-sizing: border-box;
 	    padding: 0;
 	    width: 10px;
-	    margin-left: -60px;
+	    margin-left: -18px;
 	}
 	input[type="button"], input[type="reset"], input[type="submit"] {
 	    border: 1px solid;
@@ -2351,6 +2578,75 @@ nav#site-footer-navigation {
 	    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 	    margin-left: 26px;
 	    width: 100px;
+
+	    /*breadcumb*/
+	    .row {
+		    max-width: 60.7rem;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		.row::before, .row::after {
+		    content: ' ';
+		    display: table;
+		}
+		#breadcrumbs {
+		    list-style: none;
+		    padding: 7px 0;
+		    margin: 0;
+		    overflow: hidden;
+		    position: relative;
+		}
+		#breadcrumbs li {
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		    font-family: "Univers LT W02 45 Light" , Helvetica, Arial, sans-serif;
+		}
+		.breadcrums_homepage {
+		    visibility: hidden;
+		    margin-left: -20px;
+		}
+
+		li.item-home a.bread-link.bread-home:after {
+		    font-family: 'FontAwesome';
+		    content: "\f015";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
+		#breadcrumbs li {
+		    display: inline-block;
+		    vertical-align: middle;
+		    margin-right: 10px;
+		    font-family: "Univers LT W02 45 Light" , Helvetica, Arial, sans-serif;
+		}
+		#breadcrumbs li.item-home {
+		    background-image: url(images/logo_breadcumb.png);
+		    background-position: center;
+		    background-size: 27px;
+		    background-repeat: no-repeat;
+		    margin-left: 15px;
+		}
+		li.separator:after {
+		    font-family: 'FontAwesome';
+		    content: "\f105";
+		    /* margin-left: 10px; */
+		    color: #999999;
+		    font-size: 20px;
+		}
+		.row::after {
+		    clear: both;
+		}
+		home:after {
+		    font-family: 'FontAwesome';
+		    content: "\f015";
+		    /* margin-left: 10px; */
+		    color: #273784;
+		    font-size: 20px;
+		}
+		.entry-content li {
+			font-size: 1rem;
+		}
 }
 
 @media only screen and (max-width:22.5em) {
@@ -2390,8 +2686,9 @@ nav#site-footer-navigation {
 	    margin-right: 20px;
 	}
 	button.search-submit {
-	    margin-left: -40px; */
-	    /*width: 42px;*/
+	    margin-left: -40px;
+	    width: 12%;
+	    line-height: -1;
 	    height: 33px;
 	    border-top-right-radius: 5px;
 	    border-bottom-right-radius: 5px;

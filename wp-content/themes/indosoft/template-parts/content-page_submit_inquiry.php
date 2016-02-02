@@ -12,12 +12,21 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
-		<div class="page-map"><a href=""></a>
-		   <?php the_title(
-		   '<a href="'.esc_url( home_url( '/' ) ).'" rel="home">
+		<!--<div class="page-map"><a href=""></a>-->
+		   <?php //the_title(
+		  /* '<a href="'.esc_url( home_url( '/' ) ).'" rel="home">
 		    <img src="'.get_template_directory_uri().'/images/home.png">
-		   </a><p>', '</p>' ); ?>
-		</div>
+		   </a><p>', '</p>' );*/?>
+		<!--</div>-->
+		<div class="row" id="breadcumb_nav">
+	    	<ul id="breadcrumbs" class="breadcrumbs">
+	    		<li class="item-home">
+	    			<a class="bread-link bread-home" href="http://homestead.app" title="Home"><span class="breadcrums_homepage">Home</span></a>
+	    		</li>
+	    		<li class="separator separator-home"> </li>
+	    		<li class="item-current item-archive"><span class="bread-current bread-archive"><?php the_title('<a href="'.esc_url( home_url( '/' ) ).'" rel="home"></a>' ); ?></span></li>
+	    	</ul>
+	    </div>
 		<div class="login-inf">
 			   <?php
 			   global $current_user;

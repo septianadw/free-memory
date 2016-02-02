@@ -43,8 +43,12 @@ get_header(); ?>
 
 		endif; ?>
 
+		<?php sead_paging_nav(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
 
 <?php
 get_sidebar();

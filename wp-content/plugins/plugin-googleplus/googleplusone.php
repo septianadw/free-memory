@@ -8,7 +8,7 @@
     Author URI: http://homestead.app/
     */
 function pasang_jscript(){
-    echo "<script type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\"></script>";
+    echo "<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>";
 }
 
 add_action("wp_head","pasang_jscript");

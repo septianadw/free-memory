@@ -19,10 +19,11 @@ get_header(); ?>
 
 			<?php
 			while ( have_posts() ) : the_post();
-				if(is_page('submit-inquiry')){
-					get_template_part( 'template-parts/content', 'page_submit_inquiry' );
-				} else
-				{ get_template_part( 'template-parts/content', 'page' );
+				if(is_page('home')){
+					get_template_part( 'template-parts/content', 'page' );
+
+				} else {
+					 get_template_part( 'template-parts/content', 'page_blank' );
 				}
 
 				// If comments are open or we have at least one comment, load up the comment template.
