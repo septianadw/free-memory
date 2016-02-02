@@ -19,9 +19,9 @@
             <div class="menu-footer-menu-container">
                 <?php wp_nav_menu( array( 'theme_location' => '', 'menu_id' => 'footer-menu' ) ); ?>
             </div>
-            <div class="copy" >
+            <!--<div class="copy" >
              @ Copyright <?php $date=date('Y'); echo $date;?>  BP Group
-            </div>
+            </div>-->
             </nav>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

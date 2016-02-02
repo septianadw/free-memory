@@ -160,3 +160,31 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/*PAGINATION*/
+if ( ! function_exists( 'sead_paging_nav' ) ) :
+ function sead_paging_nav() {
+	// Don't print empty markup if there's only one page.
+	if ( $GLOBALS['wp_query']->max_num_pages < 2 ) { return; } ?>
+
+
+<div class="paging">
+			<?php if ( get_next_posts_link() ) : ?>
+
+
+<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'sead' ) ); ?></div>
+
+
+			<?php endif; ?>
+			<?php if ( get_previous_posts_link() ) : ?>
+
+
+<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'sead' ) ); ?></div>
+
+
+			<?php endif; ?>
+	</div>
+
+
+<!-- .navigation -->
+<?php } endif; ?>

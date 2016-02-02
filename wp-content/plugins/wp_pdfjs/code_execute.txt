@@ -1,0 +1,1 @@
+[wp_pdfjs_viewer url="http://localhost/mywordpress/wp-content/uploads/2015/12/12344683.pdf"]
