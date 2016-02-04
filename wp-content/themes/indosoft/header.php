@@ -33,7 +33,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<div class="logoheader">
-				<img  src="http://homestead.app/wp-content/themes/indosoft/images/logo.jpg" align="left">
+				<a href="http://homestead.app" rel="home"><img  src="http://homestead.app/wp-content/themes/indosoft/images/logo.gif" align="left"></a>
 			</div>
 			<div class="title">
 				<h1>Site Title Goes Here </h1>

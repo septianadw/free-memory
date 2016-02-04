@@ -44,8 +44,8 @@
  */
 
 // Create the shortcode
-add_shortcode( 'display-pages', 'be_display_pages_shortcode' );
-function be_display_pages_shortcode( $atts ) {
+add_shortcode( 'display-posts', 'be_display_posts_shortcode' );
+function be_display_posts_shortcode( $atts ) {
 
 	// Original Attributes, for filters
 	$original_atts = $atts;
@@ -93,10 +93,10 @@ function be_display_pages_shortcode( $atts ) {
 		'wrapper'             => 'ul',
 		'wrapper_class'       => 'display-posts-listing',
 		'wrapper_id'          => false,
-	), $atts, 'display-pages' );
+	), $atts, 'display-posts' );
 
 	// End early if shortcode should be turned off
-	if( $atts['display_pages_off'] )
+	if( $atts['display_posts_off'] )
 		return;
 
 	$shortcode_title     = sanitize_text_field( $atts['title'] );
