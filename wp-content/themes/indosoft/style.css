@@ -69,12 +69,15 @@ div#primary{
 		margin: 0 auto;
 	}
 
-p,
+
 .login-inf{
 	font-family: sans-serif;
 	font-size: 12px;
 	margin-top: 5px;
+	margin-left: 58px;
 }
+
+
 .css_table{
 	font-family: sans-serif;
 	font-size: 12px;
@@ -102,6 +105,105 @@ ul {
 .nav-previous{float:left}
 .nav-previous a{text-decoration:none;color:#b45f04}
 .nav-previous a:hover{text-decoration:none;color:#eb7b0e}
+
+@media screen and (min-width: 40em) {
+    .pagination li {
+        display: inline-block;
+    }
+}
+
+.pagination-centered {
+    text-align: center;
+}
+
+.pagination {
+  	margin-left: 0;
+  	margin-bottom: 1rem;
+  	padding: 0;
+}
+
+.pagination::before, .pagination::after {
+    content: ' ';
+    display: table;
+}
+.pagination::after {
+    clear: both;
+}
+
+.pagination li {
+    font-size: 0.875rem;
+    margin-right: 0.0625rem;
+    /*display: none;*/
+    border-radius: 3px;
+}
+
+.pagination li:last-child, .pagination li:first-child {
+    display: inline-block;
+}
+
+
+.pagination a,
+.pagination button {
+    color: #0a0a0a;
+    display: block;
+    padding: 0.1875rem 0.625rem;
+    border-radius: 3px;
+}
+.pagination a:hover,
+.pagination button:hover {
+    background: #e6e6e6;
+}
+
+.pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #038003;
+    color: #fff;
+    cursor: default;
+}
+
+.pagination .disabled {
+    padding: 0.1875rem 0.625rem;
+    color: #cacaca;
+    cursor: default;
+}
+
+.pagination .disabled:hover {
+    background: transparent;
+}
+
+.pagination .ellipsis::after {
+    content: '…';
+    padding: 0.1875rem 0.625rem;
+    color: #0a0a0a;
+}
+
+.pagination-previous a::before,
+.pagination-previous.disabled::before {
+  	content: '«';
+  	display: inline-block;
+  	margin-right: 0.5rem;
+}
+
+.pagination-next a::after,
+.pagination-next.disabled::after {
+  	content: '»';
+  	display: inline-block;
+  	margin-left: 0.5rem;
+}
+
+/***************************************/
+
+/* navigation */
+ #pagination,#nav-below{display:block;width:620px;line-height:18px;margin-bottom:5px;padding:2px 10px;border-top:1px solid #ddd; }
+ .navigation{line-height:24px;margin:0;padding:2px 10px; font-size:14px;}
+ #nav-below{display:inline-block;padding:20px 10px;border-top:1px solid #ddd;border-bottom:1px solid #fff;}
+ .nav-previous{float:left;width:50%;}
+ .nav-next{float:right;width:50%;text-align:right;}
+ .pages { line-height:25px; padding:5px 10px; color: #ddd; background:#0349a8; margin-bottom:5px; border:1px solid #ccc; }
+ .page-numbers { line-height:25px; margin:5px 1px; padding:5px 5px; background:#efefef; border:1px solid #ccc; color:#0349a8; }
+ .page-numbers:hover { background:#4a630f; color:#FFF; }
+ .current,.current:hover { color:#FFF; background:##038003; /*border:1px solid #555;*/ }
+
 /* End pagination
 *****************/
 ul.display-posts-listing a.title {
@@ -132,6 +234,7 @@ main#main {
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
+    margin-left: -83px;
 }
 
 header.page-header {
@@ -355,6 +458,14 @@ th {
 	padding: 0;
 }
 
+p.showing_count {
+	color: #99CC01;
+	font-size: 10px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
 /*-------------------------------------------------*/
 /*breadcumb*/
 	    .row {
@@ -478,10 +589,12 @@ h6 {
 	text-align: left;
 }
 
+
 p {
 	margin-bottom: 1.5em;
 	width:600px;
 	text-align: left;
+
 }
 
 dfn,
@@ -675,6 +788,48 @@ img {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+}
+
+.fsheet{
+	list-style: none;
+    margin-top: 12px;
+    margin-left: -154px;
+    line-height: 18px;
+    color: #007F00;
+    font-size: 13px;
+    border-bottom: 1px #CCCCCC dashed;
+    width: 169%;
+}
+.fsheet li{
+    border-bottom: 1px #CCCCCC dashed;
+}
+
+.file-sheet-size {
+    color: #C2C2C2;
+    font-size: 13px;
+    /* margin-left: 10px; */
+    display: inline;
+    float: right;
+    margin-top: -36px;
+    margin-right: 78%;
+}
+
+img.pdf_download {
+    width: 29px;
+}
+
+@media screen and (min-width: 64em) {
+	img.pdf_download {
+		float: right;
+	    margin-right: 125px;
+	    margin-top: -36px;
+	    width: 30px;
+}
+	}
+}
+
+.pdf_link{
+	content:"\f1c1";
 }
 
 /*--------------------------------------------------------------
@@ -1065,6 +1220,8 @@ div.txt p {
 		/*margin: 0 0 1.5em;*/
 		margin: 0px -40px 1.5em;
 	}
+
+
 
 
 }
@@ -1657,7 +1814,7 @@ nav#site-footer-navigation {
 	}
 }
 
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 641px) { /*ukuran layar lebar*/
 	.content-area, .content-area-full, .site-content .widget-area, .site-branding, .main-navigation {
 		padding-left: 15px;
 		padding-right: 15px;
@@ -1700,7 +1857,9 @@ nav#site-footer-navigation {
 	}
 	.hentry {
 		/*margin: 0 0 1.5em;*/
-		margin: 0px -40px 1.5em;
+		/*margin: 0px -40px 1.5em;*/
+		margin: 0px -40px 1.5em 52px;
+    	width: 100%;
 	}
 	.page-map {
 	    margin-top: 6px;
@@ -1709,6 +1868,14 @@ nav#site-footer-navigation {
 	    border-bottom-style: double;
 	    width: 250%;
 	    height: 70px;
+	}
+
+	.login-inf span{
+		margin-left: -58px;
+	}
+
+	span.log {
+	    margin-left: 74px;
 	}
 
 }
@@ -1920,7 +2087,7 @@ nav#site-footer-navigation {
 		    content: '';
 		    display: block;
 		    border-bottom: 5px #F0F0F0 double;
-		    width: 97%;
+		    /*width: 97%;*/
 		    margin-left: auto;
 		    margin-right: auto;
 		}
@@ -2100,7 +2267,28 @@ nav#site-footer-navigation {
 
 	main#main.site-main {
     	margin-top: -15px;
+    	margin-left: 33px;
 	}
+	h1.et{
+		margin-left: -39px;
+	}
+
+	p.showing_count {
+	    color: #99CC01;
+	    font-size: 10px;
+	    font-weight: bold;
+	    margin-top: 45px;
+	    margin-bottom: 50px;
+	    margin-left: -38px;
+	}
+
+	.pagination li {
+	    font-size: 0.875rem;
+	    margin-right: 0.0625rem;
+	    display: none;
+	    border-radius: 3px;
+	}
+
 	.sr-only {
 	    position: absolute;
 	    width: 1px;
@@ -2437,9 +2625,6 @@ nav#site-footer-navigation {
 		font-size: 1.7rem;
 	}
 
-	img.pdf_download {
-	    margin-left: 20px;
-	}
 
 	header.entry-header,
 	div.entry-content,
@@ -2512,12 +2697,32 @@ nav#site-footer-navigation {
 	}*/
 
 	.login-inf {
-	    font-family: sans-serif;
-	    font-size: 12px;
-	    margin-top: 15px;
-	    padding: 2px;
-	    width: 15rem;
-	    margin-right: 20px;
+	    display:none;
+	}
+
+	span.log {
+	    display:none;
+	}
+
+	ul.fsheet{
+		margin-left: -33px;
+	}
+	.file-sheet-size {
+	    display: inline;
+	    float: right;
+	    margin-top: -33px;
+	    margin-right: 37%;
+	}
+	img.pdf_download {
+	    margin-right: 21%;
+	    margin-top: -12%;
+	    float: right;
+	    display: inline;
+	}
+
+	.pagination-centered {
+	    margin: 86px 0 0 -6rem;
+	    float: left;
 	}
 
 	.page-map {
@@ -2583,8 +2788,10 @@ nav#site-footer-navigation {
 	    /* margin-left: 85px; */
 	}
 	.hentry {
-		/*margin: 0 0 1.5em;*/
-		margin: 0px -40px 1.5em;
+		margin: -8px 0 1.5em -87px;
+	}
+	.entry-title{
+		display:none;
 	}
 	input[type="checkbox"], input[type="radio"] {
 	    box-sizing: border-box;

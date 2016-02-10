@@ -17,10 +17,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<script type="text/javascript" src="http://homestead.app/wp-content/themes/indosoft/js/navigation.js"></script>
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" media="all" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
 
 <?php wp_head(); ?>
