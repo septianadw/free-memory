@@ -16,13 +16,14 @@
 		</div>
 	</header><!-- .entry-header -->
 	<div class="row" id="breadcumb_nav">
-	    	<ul id="breadcrumbs" class="breadcrumbs">
+	    	<!-- <ul id="breadcrumbs" class="breadcrumbs">
 	    		<li class="item-home">
 	    			<a class="bread-link bread-home" href="http://homestead.app" title="Home"><span class="breadcrums_homepage">Home</span></a>
 	    		</li>
 	    		<li class="separator separator-home"> </li>
 	    		<li class="item-current item-archive"><span class="bread-current bread-archive"><?php the_title('<a href="'.esc_url( home_url( '/' ) ).'" rel="home"></a>' ); ?></span></li>
-	    	</ul>
+	    	</ul> -->
+	    	<?php custom_breadcrumbs(); ?>
 	    </div>
 
 	<div class="entry-content">
@@ -33,6 +34,7 @@
 				'after'  => '</div>',
 			) );
 		?>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
